@@ -17,7 +17,7 @@ pwd=$( pwd )
 # clone submodules
 #
 
-ln -s ${pwd}/gitconfig ~/.gitconfig
+ln -i -s ${pwd}/gitconfig ~/.gitconfig
 git submodule init
 git submodule update
 
@@ -25,6 +25,6 @@ git submodule update
 # vim
 #
 
-ln -s ${pwd}/vim/vimrc ~/.vimrc
-ln -s ${pwd}/vim ~/.vim
+ln -i -s ${pwd}/vim/vimrc ~/.vimrc
+ln -i -s ${pwd}/vim ~/.vim
 
