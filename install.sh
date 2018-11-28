@@ -17,6 +17,7 @@ pwd=$( pwd )
 # clone submodules
 #
 
+ln -s ${pwd}/gitconfig ~/.gitconfig
 git submodule init
 git submodule update
 
