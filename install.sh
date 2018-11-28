@@ -1,34 +1,29 @@
 #!/bin/sh
 
+read -p "=> are you in the root of the repo and ready to overwrite your zsh/vim/ssh config? [y/N] " ans
+case "$ans" in
+	y | Y)
+		echo "=> that's fine, then we're gonna go ahead"
+		;;
+	*)
+		echo "=> you supposed to"
+		exit 1
+		;;
+esac
+
+pwd=$( pwd )
+
+#
+# clone submodules
+#
+
 git submodule init
 git submodule update
-exit 0 
 
 #
-# vimrc
+# vim
 #
 
-if [ ! -f ./vimrc ]; then
-	echo "=> missing vimrc template"
-else
-	if [ -f ~/.vimrc ]; then
-		echo "=> you already have .vimrc in your home"
-	else
-		ln -s ./vimrc ~/.vimrc
-	fi
-fi
-
-#
-# vim modules
-#
-
-if [ ! -d ./vim ]; then
-	echo "=> missing vim template directory"
-else
-	if [ -d ~/.vim ]; then
-		echo "=> you already have .vim directory in your home"
-	else
-		ln -s ./vim ~/.vim
-	fi
-fi
+ln -s ${pwd}/vim/vimrc ~/.vimrc
+ln -s ${pwd}/vim ~/.vim
 
