@@ -2,7 +2,7 @@
  export PATH=$PATH:/usr/local/sbin
 
 # Path to dotfiles
-export ZDOTDIR=~/.dotdir/zsh
+export ZDOTDIR=~/.dir/zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH="$ZDOTDIR/oh-my-zsh"
@@ -52,7 +52,7 @@ CASE_SENSITIVE="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
- HIST_STAMPS="yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM="$ZDOTDIR/oh-my-zsh-custom"

@@ -1,12 +1,12 @@
-set viminfo+=n~/.dotdir/vim/viminfo
-set encoding=UTF-8
+set viminfo+=n~/.dir/vim/viminfo
+exe 'set rtp+=' . expand('~/.dir/vim')
 
+set encoding=UTF-8
 if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 endif
 
 syntax enable				" enable syntax processing	
-
 set tabstop=4				" number of visual spaces per TAB
 "set softtabstop=4			" number of spaces in tab when editing
 "set expandtab				" tabs are spaces

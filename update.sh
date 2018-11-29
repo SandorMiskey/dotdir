@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#
+#
+#
+
 read -p "=> are you in the root of the repo and ready to overwrite your zsh/vim/ssh config? [y/N] " ans
 case "$ans" in
 	y | Y)
@@ -22,15 +26,10 @@ git submodule init
 git submodule update
 
 #
-# vim
-#
-
-ln -v -i -s ${pwd}/vim/vimrc ~/.vimrc
-ln -v -i -n -s ${pwd}/vim ~/.vim
-
-#
 #
 #
 
 ln -v -i -s ${pwd}/zsh/zshrc ~/.zshrc
+ln -v -i -s ${pwd}/vim/vimrc ~/.vimrc
+#ln -v -i -n -s ${pwd}/vim ~/.vim
 
