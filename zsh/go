@@ -1,0 +1,5 @@
+export GOOS=darwin
+export GOARCH=amd64
+export GOPATH="/Users/SMiskey/Cloud Drives/Xynology/Home/TFD/Go"
+
+export PATH=$GOPATH/bin:$PATH

@@ -1,0 +1,23 @@
+alias a='alias'
+
+a fucking=sudo
+
+a mv='nocorrect mv'       # no spelling correction on mv
+a cp='nocorrect cp'       # no spelling correction on cp
+a mkdir='nocorrect mkdir' # no spelling correction on mkdir
+
+a l='gls -FGhl --color --group-directories-first'
+a ll='gls -AFGhl --color --group-directories-first'
+
+a df='df -h'
+a du='du -shc'
+
+a cn='echo 12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 2345678 9 2345678 0 2345678 1 2345678 2 2345678 3 2345678 4 2345678  5 23456789'
+
+a -g L='| less'
+a -g G='| grep'
+a -g O='| sort'
+a -g S='| sed'
+a -g W='| wc -l'
+
+unalias a

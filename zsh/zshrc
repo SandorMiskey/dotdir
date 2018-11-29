@@ -2,7 +2,7 @@
  export PATH=$PATH:/usr/local/sbin
 
 # Path to dotfiles
-export ZDOTDIR="/Users/SMiskey/.zdotdir"
+export ZDOTDIR=~/.dotdir/zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH="$ZDOTDIR/oh-my-zsh"
@@ -10,7 +10,7 @@ export ZSH="$ZDOTDIR/oh-my-zsh"
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="xms"
+#ZSH_THEME="xms"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -101,3 +101,4 @@ source $ZDOTDIR/bindkey
 source $ZDOTDIR/go
 
 export HOMEBREW_CASK_OPTS="--appdir=/Users/SMiskey/Cloud\ Drives/Xynology/Home/Applications/"
+

@@ -1,0 +1,15 @@
+setopt nolistbeep
+setopt autolist
+setopt alwayslastprompt
+setopt automenu
+
+setopt globdots
+setopt extendedglob
+setopt correctall
+setopt INTERACTIVECOMMENTS
+unsetopt clobber
+
+cdpath=( ~ /etc  ~/bin ~/etc /mnt / )
+setopt autocd
+setopt autopushd pushdminus pushdsilent pushdtohome
+

@@ -1,0 +1,82 @@
+bindkey -v
+
+bindkey '^[[2~'	overwrite-mode					# Insert
+bindkey '^[[L'	overwrite-mode					# Insert
+bindkey '\e[5~'	backward-word					# PgUp
+bindkey '[I'	backward-word					# PgUp
+bindkey '\e[6~'	forward-word					# PgDn
+bindkey '[G'	forward-word					# PgDn
+
+bindkey -s	'^Z'	'^[Qfg^M'
+bindkey -s	'^T'	'date; uptime^M'			# VMS rulez
+bindkey		'^J'	self-insert					# LF
+bindkey		'^L'	clear-screen
+bindkey		'^U'	backward-kill-line
+bindkey		'^X'	kill-word
+bindkey		'^A'	undo
+# bindkey	' '		magic-space
+# bindkey	'^I'	expand-or-complete-prefix	# TAB
+# bindkey	'^[^I'	reverse-menu-complete		# ESC TAB
+
+# search in shell history with beginning of line
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end  history-search-end
+zle -N history-beginning-search-forward-end  history-search-end
+bindkey "^[OA" history-beginning-search-backward-end
+bindkey "^[OB" history-beginning-search-forward-end
+# search backwards and forwards with a pattern
+autoload -U history-search-end
+zle -N history-incremental-pattern-search-backward-end  history-search-end
+zle -N history-incremental-pattern-search-forward-end  history-search-end
+bindkey -M vicmd '/' history-incremental-pattern-search-backward-end
+bindkey -M vicmd '?' history-incremental-pattern-search-forward-end
+bindkey -M viins '^B' history-incremental-pattern-search-backward
+bindkey -M viins '^F' history-incremental-pattern-search-forward
+
+case $TERM in linux*)
+	bindkey '^[[1~'	beginning-of-line					# Home
+	bindkey '^[[4~'	end-of-line							# End
+	bindkey '^[[[A'	history-beginning-search-backward	# F1
+	bindkey '^[[[B'	history-beginning-search-forward	# F2
+	bindkey '^[[[C'	history-incremental-search-backward	# F3
+	bindkey '^[[[D'	history-incremental-search-forward	# F4
+	bindkey '^[[3~'	delete-char-or-list
+;;
+cons*)
+	bindkey '[H'	beginning-of-line			# Home
+	bindkey '[F'	end-of-line					# End
+	bindkey ''	delete-char-or-list
+;;
+xterm*)
+	#setopt NO_FLOW_CONTROL
+	bindkey	'^[[1~'		beginning-of-line					# Home
+	bindkey '^[[7~'		beginning-of-line					# Home (xterm)
+	bindkey '^[[H'		beginning-of-line					# Home (rxvt)
+	bindkey '^[OH'		beginning-of-line					# Home (gnome-terminal)
+	bindkey '^[[4~'		end-of-line							# End
+	bindkey '^[[8~'		end-of-line							# End (xterm)
+	bindkey '^[[F'		end-of-line							# End (xterm)
+	bindkey '^[Ow'		end-of-line							# End (rxvt)
+	bindkey '^[OF'		end-of-line							# End (gnome-terminal)
+	bindkey '^[[11~'	history-beginning-search-backward	# F1 (xterm)
+	bindkey '^[[12~'	history-beginning-search-forward	# F2 (xterm)
+	bindkey '^[[13~'	history-incremental-search-backward	# F3 (xterm)
+	bindkey '^[[14~'	history-incremental-search-forward	# F4 (xterm)
+	#bindkey '^[[15~'	push-line-or-edit					# F5 (xterm)
+	#bindkey '^?'		delete-char-or-list
+	bindkey '^[[3~'		delete-char-or-list
+;;
+Eterm)
+	bindkey '[7~'	beginning-of-line
+	bindkey '[8~' end-of-line
+;;
+vt100)
+	bindkey '^[[1~'  beginning-of-line                      # Home
+	bindkey '^[[4~'  end-of-line                            # End
+	bindkey '^[[11~' history-beginning-search-backward      # F1 (xterm)
+	bindkey '^[[12~' history-beginning-search-forward       # F2 (xterm)
+	bindkey '^[[13~' history-incremental-search-backward	# F3 (xterm)
+	bindkey '^[[14~' history-incremental-search-forward		# F4 (xterm)
+	# bindkey '^[[15~' push-line-or-edit					# F5 (xterm)
+;;
+esac
