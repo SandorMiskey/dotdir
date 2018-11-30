@@ -95,6 +95,8 @@ fi
 source $ZDOTDIR/rc
 source $ZDOTDIR/alias
 source $ZDOTDIR/bindkey
-source $ZDOTDIR/go
-source $ZDOTDIR/local
+
+if [[ -a $ZDOTDIR/local ]]; then
+	source $ZDOTDIR/local
+fi
 
