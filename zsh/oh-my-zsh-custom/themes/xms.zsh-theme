@@ -6,7 +6,7 @@ else
 	RPS1='%S%n@%m:%!%s'
 fi
 
-if [[ $( hostname ) == *"localhost"* ]]; then
+if [[ $( hostname ) == *"prod"* ]]; then
 	PROMPT="%{$bg[red]%}%n@%m:%~ %#%{$reset_color%} "
 	RPS1="%{$bg[red]%}%!%{$reset_color%}"
 fi
