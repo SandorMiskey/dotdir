@@ -6,8 +6,11 @@ a mv='nocorrect mv'       # no spelling correction on mv
 a cp='nocorrect cp'       # no spelling correction on cp
 a mkdir='nocorrect mkdir' # no spelling correction on mkdir
 
-a l='gls -FGhl --color --group-directories-first'
-a ll='gls -AFGhl --color --group-directories-first'
+if hash gls 2>/dev/null; then
+	a -g ls='gls'
+fi
+a l='ls -FGhl --color --group-directories-first'
+a ll='ls -AFGhl --color --group-directories-first'
 
 a df='df -h'
 a du='du -shc'
