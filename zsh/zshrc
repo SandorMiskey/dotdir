@@ -77,9 +77,7 @@ export MANPATH="/usr/local/share/man:$MANPATH"
 if [[ -n $SSH_CONNECTION ]]; then
 	export EDITOR='vim'
 else
-	# untill mvim fixed or 'Cloud Storage' renamed to 'Cloud'
-	# export EDITOR='mvim'
-	export EDITOR='vim'
+	export EDITOR='mvim'
 fi
 
 # Compilation flags
