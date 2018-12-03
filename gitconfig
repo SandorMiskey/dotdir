@@ -1,7 +1,7 @@
 [user]
 	name = Sandor Miskey
 	email = s@ndor.miskey.net
-[url "git@github.com:"]
+[url "git@github:"]
 	insteadOf = https://github.com/
 [url "git@redmine.erba.hu:"]
 	insteadOf = https://redmine.erba.hu
