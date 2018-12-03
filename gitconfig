@@ -3,5 +3,5 @@
 	email = s@ndor.miskey.net
 [url "git@redmine.erba.hu:"]
 	insteadOf = https://redmine.erba.hu
-[url "APKAJBNJPBBYHDBFWOWA@git-codecommit.eu-central-1.amazonaws.com:"]
-	insteadOf = https://git-codecommit.eu-central-1.amazonaws.com
+[url "APKAJBNJPBBYHDBFWOWA@git-codecommit.eu-central-1.amazonaws.com:/v1/repos/framework"]
+	insteadOf = https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/framework.git
