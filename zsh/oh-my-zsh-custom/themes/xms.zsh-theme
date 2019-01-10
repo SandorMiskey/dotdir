@@ -10,6 +10,10 @@ if [[ $( hostname ) == *"prod"* ]]; then
 	PROMPT="%{$bg[red]%}%n@%m:%~ %#%{$reset_color%} "
 	RPS1="%{$bg[red]%}%!%{$reset_color%}"
 fi
+if [[ $( hostname ) == *"pigtrace"* ]]; then
+	PROMPT="%{$bg[red]%}%n@%m:%~ %#%{$reset_color%} "
+	RPS1="%{$bg[red]%}%!%{$reset_color%}"
+fi
 
 export PROMPT RPS1
 
