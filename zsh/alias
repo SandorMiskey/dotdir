@@ -2,6 +2,7 @@ alias a='alias'
 
 a fucking=sudo
 a ssh='ssh -A'
+a s='ssh -A'
 
 a mv='nocorrect mv'       # no spelling correction on mv
 a cp='nocorrect cp'       # no spelling correction on cp
