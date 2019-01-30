@@ -2,7 +2,7 @@ alias a='alias'
 
 a fucking=sudo
 a ssh='ssh -A'
-a s='ssh -A'
+a s='ssh'
 
 a mv='nocorrect mv'       # no spelling correction on mv
 a cp='nocorrect cp'       # no spelling correction on cp
@@ -18,6 +18,7 @@ a df='df -h'
 a du='du -shc'
 
 a v='vi'
+a t='tmux a'
 
 a cn='echo 12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 2345678 9 2345678 0 2345678 1 2345678 2 2345678 3 2345678 4 2345678  5 23456789'
 
