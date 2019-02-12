@@ -1,0 +1,39 @@
+Host *
+	#UseKeychain yes
+	AddKeysToAgent yes
+	ServerAliveInterval 120
+	ServerAliveCountMax 30
+
+Host dm 
+	HostName tefoodhl-dev.erba.hu
+	User smiskey
+Host dw
+	HostName 10.96.2.20
+	User smiskey
+
+Host github.com
+	User git
+Host git-codecommit.*.amazonaws.com
+	User APKAJBNJPBBYHDBFWOWA 
+
+Host mm
+	HostName 18.196.225.38 
+	User smiskey
+Host mv1
+	HostName 144.217.88.109
+	user smiskey
+Host mv2
+	HostName 207.148.77.146
+	user smiskey
+
+Host p
+	HostName pigtrace3.erba.hu
+	User smiskey
+
+Host tm
+	HostName 18.194.58.213
+	user smiskey
+Host tw
+	HostName 18.185.220.45
+	user smiskey 
+
