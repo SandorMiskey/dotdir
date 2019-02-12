@@ -31,5 +31,5 @@ git submodule update
 
 ln -v -i -s ${pwd}/zsh/zshrc ~/.zshrc
 ln -v -i -s ${pwd}/vim/vimrc ~/.vimrc
-#ln -v -i -n -s ${pwd}/vim ~/.vim
+ln -v -i -s ${pwd}/sshconfig ~/.ssh/config
 
