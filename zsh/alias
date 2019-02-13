@@ -17,6 +17,8 @@ a ll='ls -AFGhl --color --group-directories-first'
 a df='df -h'
 a du='du -shc'
 
+a dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Ports}}"'
+
 a v='vi'
 a t='tmux a'
 a g='git'
