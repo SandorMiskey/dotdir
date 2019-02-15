@@ -31,7 +31,7 @@ Host p
 	User smiskey
 
 Host tm
-	HostName 18.194.58.213
+	HostName 3.121.194.158
 	user smiskey
 Host tw
 	HostName 18.197.74.200
