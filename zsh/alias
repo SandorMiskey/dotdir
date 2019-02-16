@@ -16,6 +16,7 @@ a ll='ls -AFGhl --color --group-directories-first'
 
 a df='df -h'
 a du='du -shc'
+a free='free -mh'
 
 a dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Ports}}"'
 
