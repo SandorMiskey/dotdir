@@ -19,6 +19,7 @@ a du='du -shc'
 a free='free -mh'
 
 a dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Ports}}"'
+a dnls='docker node ls'
 
 a v='vi'
 a t='tmux a'
