@@ -1,5 +1,9 @@
 alias a='alias'
 
+#
+#
+#
+
 a fucking=sudo
 a ssh='ssh -A'
 a s='ssh'
@@ -17,6 +21,9 @@ a ll='ls -AFGhl --color --group-directories-first'
 a df='df -h'
 a du='du -shc'
 a free='free -mh'
+if hash htop 2>/dev/null; then
+	a top='htop -d 30'
+fi
 
 a dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Ports}}"'
 a dnls='docker node ls'
@@ -27,10 +34,18 @@ a g='git'
 
 a cn='echo 12345678 1 2345678 2 2345678 3 2345678 4 2345678 5 2345678 6 2345678 7 2345678 8 2345678 9 2345678 0 2345678 1 2345678 2 2345678 3 2345678 4 2345678  5 23456789'
 
+#
+# global aliases
+#
+
 a -g L='| less'
 a -g G='| grep'
 a -g O='| sort'
 a -g S='| sed'
 a -g W='| wc -l'
+
+#
+#
+#
 
 unalias a
