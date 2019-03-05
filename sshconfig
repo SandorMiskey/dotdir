@@ -19,10 +19,13 @@ Host git-codecommit.*.amazonaws.com
 Host mm
 	HostName 18.196.225.38 
 	User smiskey
-Host mv1
+Host mwa
+    HostName 54.233.106.88
+	User smiskey
+Host mwo
 	HostName 144.217.88.109
 	user smiskey
-Host mv2
+Host mwv
 	HostName 207.148.77.146
 	user smiskey
 
