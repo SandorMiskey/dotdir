@@ -10,7 +10,7 @@ case "$ans" in
 		echo "=> that's fine, then we're gonna go ahead"
 		;;
 	*)
-		echo "=> you supposed to"
+		echo "=> you supposed to..."
 		exit 1
 		;;
 esac
@@ -26,7 +26,7 @@ git submodule init
 git submodule update
 
 #
-#
+# update symlinks to configfiles
 #
 
 ln -v -i -s ${pwd}/zsh/zshrc ~/.zshrc
