@@ -28,6 +28,10 @@ Host mwo
 Host mwv
 	HostName 207.148.77.146
 	user smiskey
+Host mwvn
+    HostName 125.253.123.5
+    Port 63379
+    user smiskey 
 
 Host p
 	HostName pigtrace3.erba.hu
