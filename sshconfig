@@ -37,7 +37,7 @@ Host mwvn
     user smiskey 
 
 Host p
-	HostName pigtrace3.erba.hu
+	HostName 120.72.102.148
 	User smiskey
 
 Host tm
