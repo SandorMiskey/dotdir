@@ -6,6 +6,11 @@ else
 	RPS1='%S%n@%m:%!%s'
 fi
 
+if [[ $( hostname ) == *"testnet"* ]]; then
+    PROMPT="%{$bg[yellow]%}%n@%m:%~ %#%{$reset_color%} "
+    RPS1="%{$bg[yellow]%}%!%{$reset_color%}"
+fi
+
 if [[ $( hostname ) == *"mainnet"* ]]; then
 	PROMPT="%{$bg[red]%}%n@%m:%~ %#%{$reset_color%} "
 	RPS1="%{$bg[red]%}%!%{$reset_color%}"
