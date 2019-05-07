@@ -16,6 +16,9 @@ Host github.com
 Host git-codecommit.*.amazonaws.com
 	User APKAJBNJPBBYHDBFWOWA 
 
+Host m
+	HostName 18.197.24.101
+	User smiskey
 Host mm
 	HostName 18.195.120.131
 	User smiskey
