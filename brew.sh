@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pkgs=(coreutils htop nmap openvpn tmux unrar)
-casks=(google-chrome skype vlc synology-drive whatsapp telegram brave sequel-pro tor-browser dictionaries macvim signal)
+casks=(skype vlc telegram brave sequel-pro tor-browser dictionaries macvim)
 
 read -p "=> are you want to install or upgrade basic homebrew packages? [i/u/N] " ans
 case "$ans" in

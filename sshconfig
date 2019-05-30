@@ -5,7 +5,7 @@ Host *
 	ServerAliveCountMax 30
 
 Host dm 
-	HostName tefoodhl-dev.erba.hu
+	HostName 10.96.128.27
 	User smiskey
 Host dw
 	HostName 10.96.2.20
@@ -39,6 +39,11 @@ Host mwvn
 Host p
 	HostName 120.72.102.148
 	User smiskey
+
+Host pi
+ 	HostName 10.96.1.142
+ 	User smiskey
+ 	IdentityFile ~/.ssh/id_rsa_erba
 
 Host tm
 	HostName 3.121.194.158
