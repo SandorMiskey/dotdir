@@ -27,6 +27,7 @@ fi
 
 a dps='docker ps --format "table {{.Names}}\t{{.Status}}\t{{.Image}}\t{{.Ports}}"'
 a dnls='docker node ls'
+a dsl='docker service logs --tail 10 -f'
 
 a v='vi'
 a t='tmux a'
