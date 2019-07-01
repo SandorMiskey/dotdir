@@ -8,6 +8,7 @@ a fucking=sudo
 a ssh='ssh -A'
 a s='ssh'
 
+a c='cd'
 a mv='nocorrect mv'       # no spelling correction on mv
 a cp='nocorrect cp'       # no spelling correction on cp
 a mkdir='nocorrect mkdir' # no spelling correction on mkdir
