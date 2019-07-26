@@ -9,8 +9,9 @@ bindkey '[G'	forward-word					# PgDn
 
 bindkey -s	'^Z'	'^[Qfg^M'
 bindkey -s	'^T'	'date; uptime^M'			# VMS rulez
-bindkey		'^J'	self-insert					# LF
+bindkey -s	'^K'	'clear; cn^M'
 bindkey		'^L'	clear-screen
+bindkey		'^J'	self-insert					# LF
 bindkey		'^U'	backward-kill-line
 bindkey		'^X'	kill-word
 bindkey		'^A'	undo

@@ -1,0 +1,14 @@
+cn () {
+	cols=`tput cols`
+
+	for c in `seq 1 $cols`
+	do
+		o=`echo "${c: -1}"`
+		t=`echo "${c: -2:-1}"`
+
+		d=$o
+		d=`echo $d | sed -e "s/1/ /g" -e "s/9/ /" -e s/0/$t/`
+
+		echo -n $d
+	done
+}
