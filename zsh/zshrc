@@ -60,6 +60,7 @@ ZSH_CUSTOM="$ZDOTDIR/oh-my-zsh-custom"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  git-prompt
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -95,7 +96,7 @@ fi
 source $ZDOTDIR/rc
 source $ZDOTDIR/alias
 source $ZDOTDIR/bindkey
-source $ZDOTDIR/func
+source $ZDOTDIR/func.sh
 
 if [[ -a $ZDOTDIR/local ]]; then
 	source $ZDOTDIR/local

@@ -13,3 +13,5 @@ cdpath=( ~ /etc  ~/bin ~/etc /mnt / )
 setopt autocd
 setopt autopushd pushdminus pushdsilent pushdtohome
 
+setopt prompt_subst
+
