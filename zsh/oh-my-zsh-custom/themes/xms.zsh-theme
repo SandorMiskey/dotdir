@@ -38,7 +38,7 @@ PROMPT='$base_colour%~ %#%s%{$reset_color%} '
 RPS1='$base_colour%n@%m:%s$(git_super_status)%S%!%s%{$reset_color%}'
 if [[ -n $SSH_CONNECTION ]]; then
 	PROMPT='$base_colour%n@%m:%~ %#%s%{$reset_color%} '
-	RPS1='$base_colour$(git_super_status)$base_colour%S%!%s%{$reset_color%}'
+	RPS1='$base_colour$(git_super_status)$base_colour%!%{$reset_color%}'
 fi
 
 #
