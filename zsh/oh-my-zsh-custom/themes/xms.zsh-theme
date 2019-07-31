@@ -27,7 +27,7 @@ ZSH_THEME_GIT_PROMPT_CONFLICTS="$base_colour%{$bg[red]%}%Sx"
 ZSH_THEME_GIT_PROMPT_CHANGED="$base_colour%{$bg[red]%}%S+"
 ZSH_THEME_GIT_PROMPT_BEHIND="$base_colour%S%{↓%G%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="$base_colour%S%{↑%G%}"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="$base_colour%{$bg[red]%}%{…%G%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="$base_colour%{$bg[red]%}%S%{…%G%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="$base_colour%S%{✓%G%}"
 
 #
