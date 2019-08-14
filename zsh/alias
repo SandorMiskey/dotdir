@@ -5,6 +5,7 @@ alias a='alias'
 #
 
 a fucking=sudo
+a please='sudo $(fc -LlI -1 | sed "s/ [0-9]* *//")'
 a ssh='ssh -A'
 a s='ssh'
 
