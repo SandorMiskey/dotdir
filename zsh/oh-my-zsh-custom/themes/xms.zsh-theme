@@ -6,7 +6,7 @@ case $( hostname ) in
 	*testnet* )
 		base_colour="%{$bg[yellow]%}"
 		;;
-	mainnet | pig* | prod )
+	*mainnet* | pig* | prod )
 		base_colour="%{$bg[red]%}"
 		;;
 	* )
