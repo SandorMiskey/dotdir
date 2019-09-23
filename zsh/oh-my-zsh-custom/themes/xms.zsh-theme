@@ -3,10 +3,10 @@
 #
 
 case $( hostname ) in
-	*testnet* )
+	*testnet* | *TESTNET* )
 		base_colour="%{$bg[yellow]%}"
 		;;
-	*mainnet* | pig* | prod )
+	*mainnet* | *MAINNET* | pig* | prod )
 		base_colour="%{$bg[red]%}"
 		;;
 	* )
