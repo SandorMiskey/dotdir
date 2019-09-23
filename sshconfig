@@ -35,7 +35,7 @@ Host mwa
     HostName 54.233.106.88
 	User smiskey
 Host mwc
-	HostName 10.10.1.39
+	HostName 207.180.216.81
 	User smiskey
 Host mwo
 	HostName 149.56.14.121
@@ -63,6 +63,6 @@ Host tm
 Host tw
 	HostName 18.197.74.200
 	user smiskey 
-Host mwc
-	HostName 10.10.1.39
+Host twc
+	HostName 144.91.71.70
 	User smiskey
