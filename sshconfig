@@ -4,6 +4,15 @@ Host *
 	ServerAliveInterval 120
 	ServerAliveCountMax 30
 
+Host cpriv
+	HostName 173.212.243.56
+	Port 2122
+	User smiskey
+Host cpub
+	HostName 173.212.243.56
+	Port 2222
+	User smiskey
+
 Host dm 
 	HostName 10.96.128.27
 	User smiskey
@@ -25,11 +34,7 @@ Host mm
 Host mwa
     HostName 54.233.106.88
 	User smiskey
-Host mwcp
-	HostName 173.212.243.56
-	Port 2122
-	User smiskey
-Host mwcpa
+Host mwc
 	HostName 10.10.1.39
 	User smiskey
 Host mwo
@@ -58,4 +63,6 @@ Host tm
 Host tw
 	HostName 18.197.74.200
 	user smiskey 
-
+Host mwc
+	HostName 10.10.1.39
+	User smiskey
