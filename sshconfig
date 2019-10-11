@@ -39,7 +39,10 @@ Host mwc
 	User smiskey
 Host mwo
 	HostName 149.56.14.121
-	user smiskey
+	User smiskey
+Host mwr
+	HostName 185.187.73.202
+	User smiskey
 Host mwv
 	HostName 149.28.27.5
 	user smiskey
@@ -66,3 +69,7 @@ Host tw
 Host twc
 	HostName 144.91.71.70
 	User smiskey
+Host twr
+	HostName 185.187.73.203
+	User smiskey
+
