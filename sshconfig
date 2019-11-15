@@ -25,6 +25,10 @@ Host github.com
 Host git-codecommit.*.amazonaws.com
 	User APKAJBNJPBBYHDBFWOWA 
 
+Host kfi
+	HostName kfifood-dev.erba.hu
+ 	User smiskey
+
 Host m
 	HostName 18.197.24.101
 	User smiskey
