@@ -8,6 +8,9 @@ Host cpriv
 	HostName 173.212.243.56
 	Port 2122
 	User smiskey
+Host ct
+	HostName 10.10.1.131
+	User smiskey
 Host cpub
 	HostName 173.212.243.56
 	Port 2222
