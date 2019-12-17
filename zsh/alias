@@ -38,6 +38,13 @@ a t='tmux a'
 a g='git'
 
 #
+# Desktop apps
+#
+
+a vscode='open -a "Visual Studio Code.app"'
+a safari='open -a Safari.app'
+
+#
 # global aliases
 #
 
