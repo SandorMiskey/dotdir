@@ -37,6 +37,8 @@ a v='vi'
 a t='tmux a'
 a g='git'
 
+function gi() { curl -sLw "\n" https://www.gitignore.io/api/$@ ;}
+
 #
 # Desktop apps
 #
