@@ -1,4 +1,5 @@
 .*.swp
+.zsh_history
 vim/viminfo
 zsh/.zcompdump*
 zsh/local

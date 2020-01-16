@@ -42,7 +42,9 @@ a g='git'
 #
 
 a vscode='open -a "Visual Studio Code.app"'
-a safari='open -a Safari.app'
+safari() {
+  open -a Safari.app $1
+}
 
 #
 # global aliases

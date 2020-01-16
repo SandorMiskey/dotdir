@@ -15,7 +15,9 @@ set ruler
 set cursorline
 set whichwrap+=<,>,h,l,[,]	" causes the left and right arrow keys, as well as h and l, to wrap when used at beginning or end of lines
 set nowrap
+set list
 set number					" show line numbers
+set relativenumber 			" show relative numbers
 set showcmd					" show command in bottom bar
 set cursorline				" highlight curren
 set wildmenu				" visual autocomplete for command menu
@@ -27,6 +29,9 @@ set incsearch				" search as characters are entered
 set hlsearch				" highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
 							" turn off search highlight
+
+set clipboard=unnamed 		" copied text from vim can be pasted by CTRL+V and copied text from CTRL+C can be pasted into vim with ‘p’ 
+set clipboard=unnamedplus
 
 set foldenable				" enable folding
 set foldlevelstart=10		" open most folds by default
@@ -49,6 +54,10 @@ nnoremap E $
 "nnoremap ^ <nop>
 " highlight last inserted text
 nnoremap gV `[v`]
+
+" escape with a ‘jk’ or ‘kj’ press
+cnoremap kj <C-C>
+cnoremap jk <C-C>
 
 "
 " pathogen
