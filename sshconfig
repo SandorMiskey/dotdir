@@ -4,6 +4,11 @@ Host *
 	ServerAliveInterval 120
 	ServerAliveCountMax 30
 
+Host bcc
+	HostName 144.91.126.92
+	Port 2222
+	User erba
+
 Host cpriv
 	HostName 173.212.243.56
 	Port 2122
