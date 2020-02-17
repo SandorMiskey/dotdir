@@ -34,7 +34,7 @@ Host git-codecommit.*.amazonaws.com
 	User APKAJBNJPBBYHDBFWOWA 
 
 Host kfi
-	HostName kfifood-dev.erba.hu
+	HostName kvantfood-dev.kvantfood.hu
  	User smiskey
 
 Host m

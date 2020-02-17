@@ -6,7 +6,7 @@ if has("gui_running")
 	set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 endif
 
-syntax enable				" enable syntax processing	
+syntax enable				" enable syntax processing
 set tabstop=4				" number of visual spaces per TAB
 "set softtabstop=4			" number of spaces in tab when editing
 "set expandtab				" tabs are spaces
@@ -15,7 +15,7 @@ set ruler
 set cursorline
 set whichwrap+=<,>,h,l,[,]	" causes the left and right arrow keys, as well as h and l, to wrap when used at beginning or end of lines
 set nowrap
-set list
+"set list
 set number					" show line numbers
 set relativenumber 			" show relative numbers
 set showcmd					" show command in bottom bar
@@ -30,7 +30,7 @@ set hlsearch				" highlight matches
 nnoremap <leader><space> :nohlsearch<CR>
 							" turn off search highlight
 
-set clipboard=unnamed 		" copied text from vim can be pasted by CTRL+V and copied text from CTRL+C can be pasted into vim with ‘p’ 
+set clipboard=unnamed 		" copied text from vim can be pasted by CTRL+V and copied text from CTRL+C can be pasted into vim with ‘p’
 set clipboard=unnamedplus
 
 set foldenable				" enable folding
@@ -40,8 +40,8 @@ set foldmethod=indent		" fold based on indent level
 nnoremap <space> za
 							" space open/closes folds
 
-set laststatus=2
-set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
+"set laststatus=2
+"set statusline=[%n]\ %<%F\ \ \ [%M%R%H%W%Y][%{&ff}]\ \ %=\ line:%l/%L\ col:%c\ \ \ %p%%\ \ \ @%{strftime(\"%H:%M:%S\")}
 
 " move vertically by visual line
 nnoremap j gj
@@ -117,7 +117,7 @@ endif
 
 "
 " Vim-Airline Configuration
-" 
+"
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
