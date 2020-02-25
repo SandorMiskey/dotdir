@@ -41,6 +41,10 @@ Host mlvm
 	User erba
 	Port 2422
 
+Host gehl
+	HostName 104.214.66.203
+	User smiskey
+	IdentityFile ~/.ssh/id_rsa_erba
 
 Host m
 	HostName 18.197.24.101
