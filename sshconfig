@@ -36,6 +36,11 @@ Host git-codecommit.*.amazonaws.com
 Host kfi
 	HostName kvantfood-dev.kvantfood.hu
  	User smiskey
+Host mlvm
+	HostName 144.91.126.92
+	User erba
+	Port 2422
+
 
 Host m
 	HostName 18.197.24.101
