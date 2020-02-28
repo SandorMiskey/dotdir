@@ -44,6 +44,9 @@ Host mlvm
 Host gehl
 	HostName 104.214.66.203
 	User smiskey
+Host geapp
+	HostName 13.66.24.77
+	User smiskey
 
 Host m
 	HostName 18.197.24.101
