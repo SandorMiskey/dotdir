@@ -32,7 +32,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 							" turn off search highlight
 
 set clipboard=unnamed 		" copied text from vim can be pasted by CTRL+V and copied text from CTRL+C can be pasted into vim with ‘p’
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 set foldenable				" enable folding
 set foldlevelstart=10		" open most folds by default
