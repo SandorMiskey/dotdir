@@ -36,6 +36,8 @@ a dex='docker exec -it'
 a v='vi'
 a t='tmux a'
 a g='git'
+a gcd='g checkout devel'
+a gct='g checkout test'
 
 function gi() { curl -sLw "\n" https://www.gitignore.io/api/$@ ;}
 
