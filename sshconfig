@@ -41,6 +41,9 @@ Host mlvm
 	User erba
 	Port 2522
 
+Host hpdev
+    HostName hp-dev.erba.hu
+    User smiskey
 Host gehl
 	HostName 104.214.66.203
 	User smiskey
