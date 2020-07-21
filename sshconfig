@@ -44,6 +44,13 @@ Host mlvm
 Host hpdev
     HostName hp-dev.erba.hu
     User smiskey
+Host hpprod
+    HostName healthpassas.erba.hu
+    User smiskey
+Host hptest
+    HostName healthpassas-tst.erba.hu
+    User smiskey
+
 Host gehl
 	HostName 104.214.66.203
 	User smiskey
