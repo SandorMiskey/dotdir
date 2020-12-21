@@ -102,3 +102,6 @@ if [[ -a $ZDOTDIR/local ]]; then
 	source $ZDOTDIR/local
 fi
 
+# eval `gdircolors $ZDOTDIR/dircolors.256dark`
+eval `gdircolors $ZDOTDIR/dircolors.ansi-dark`
+
