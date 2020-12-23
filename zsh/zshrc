@@ -102,6 +102,11 @@ if [[ -a $ZDOTDIR/local ]]; then
 	source $ZDOTDIR/local
 fi
 
-# eval `gdircolors $ZDOTDIR/dircolors.256dark`
+# shouldn't be here...
+#
+if ! type gdircolors > /dev/null; then
+    alias gdircolors=dircolors
+fi
 eval `gdircolors $ZDOTDIR/dircolors.ansi-dark`
+# eval `gdircolors $ZDOTDIR/dircolors.256dark`
 
